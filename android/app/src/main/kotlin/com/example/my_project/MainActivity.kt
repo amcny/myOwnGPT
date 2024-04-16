@@ -1,4 +1,4 @@
-package com.mycompany.myowngpt
+package com.myowngpt.cny
 
 import io.flutter.embedding.android.FlutterActivity
 
