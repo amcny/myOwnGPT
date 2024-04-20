@@ -45,7 +45,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFF3F8FE),
         body: SafeArea(
           top: true,
           child: SingleChildScrollView(
@@ -181,6 +181,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     fontFamily: 'Gothic A1',
                                     letterSpacing: 0.0,
                                   ),
+                          keyboardType: TextInputType.multiline,
                           validator: _model.promptfieldTextControllerValidator
                               .asValidator(context),
                         ),
