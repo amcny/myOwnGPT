@@ -1,9 +1,9 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'home_page_widget.dart' show HomePageWidget;
+import 'page_widget.dart' show PageWidget;
 import 'package:flutter/material.dart';
 
-class HomePageModel extends FlutterFlowModel<HomePageWidget> {
+class PageModel extends FlutterFlowModel<PageWidget> {
   ///  Local state fields for this page.
 
   String apiResponse = 'Enter prompt to get answer';
@@ -11,10 +11,10 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for promptfield widget.
-  FocusNode? promptfieldFocusNode;
-  TextEditingController? promptfieldTextController;
-  String? Function(BuildContext, String?)? promptfieldTextControllerValidator;
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode;
+  TextEditingController? textController;
+  String? Function(BuildContext, String?)? textControllerValidator;
   // Stores action output result for [Backend Call - API (Gemini Ai Text)] action in IconButton widget.
   ApiCallResponse? apiResult3st;
 
@@ -24,7 +24,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   @override
   void dispose() {
     unfocusNode.dispose();
-    promptfieldFocusNode?.dispose();
-    promptfieldTextController?.dispose();
+    textFieldFocusNode?.dispose();
+    textController?.dispose();
   }
 }
