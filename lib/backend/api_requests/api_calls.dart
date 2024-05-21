@@ -10,7 +10,7 @@ const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
 class GeminiAiTextCall {
   static Future<ApiCallResponse> call({
-    String? apiKey = 'AIzaSyD7NJw4D6wIHCFHsPlv9PQKfxJk4_KATiY',
+    String? apiKey = 'AIzaSyCELOcWhOK8BYuc2_4WfKx41rad21wZuKg',
     String? prompt = '',
   }) async {
     final ffApiRequestBody = '''
