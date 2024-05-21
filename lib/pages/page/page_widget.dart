@@ -126,6 +126,7 @@ class _PageWidgetState extends State<PageWidget> {
                         autofocus: true,
                         obscureText: false,
                         decoration: InputDecoration(
+                          isDense: true,
                           labelText: 'Enter Prompt Here...',
                           labelStyle: FlutterFlowTheme.of(context)
                               .labelMedium
@@ -169,6 +170,7 @@ class _PageWidgetState extends State<PageWidget> {
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
+                          contentPadding: const EdgeInsets.all(5.0),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Open Sans',
@@ -226,7 +228,7 @@ class _PageWidgetState extends State<PageWidget> {
                   child: MarkdownBody(
                     data: valueOrDefault<String>(
                       _model.apiResponse,
-                      'Enter prompt to get an answer',
+                      'Enter the prompt to get an answer.',
                     ),
                     selectable: true,
                     onTapLink: (_, url, __) => launchURL(url!),

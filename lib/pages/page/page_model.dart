@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class PageModel extends FlutterFlowModel<PageWidget> {
   ///  Local state fields for this page.
 
-  String apiResponse = 'Enter prompt to get answer';
+  String apiResponse = 'Enter the prompt to get an answer.';
 
   ///  State fields for stateful widgets in this page.
 
